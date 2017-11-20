@@ -1,0 +1,81 @@
+
+/*中间主体内容开始*/
+section{
+    width:1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    height:395px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+section div{
+    width: 395px;
+    height:395px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 2px #6F6E6A;
+}
+section div a{
+    width:100%;
+    height:100%;
+    display: block;
+    text-decoration: none;
+}
+.left{
+    background-color: #F2FFE9;
+}
+.right{
+    background-color: #FFECEE;
+}
+span.icon{
+    display: block;
+    width:94px ;
+    height:106px;
+    background: url("../images/ico_login.png") 0 -195px no-repeat;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+span.icon_sell{
+    background-position: -101px -195px;
+    width: 123px;
+}
+span.u_reg{
+    display: block;
+    text-align: center;
+    width:100%;
+    font-size: 26px;
+    margin: 10px 0 30px 0;
+    color:#333;
+}
+span.text{
+    font-size: 16px;
+    color:#888;
+}
+span.center_jt{
+    display: inline-block;
+    width:40px;
+    height:34px;
+    background: url("../images/ico_login.png")0 -422px no-repeat ;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -25px;
+    margin-top: -11px;
+}
+.left:hover{
+    background-color:#008DE4;
+}
+.left:hover span.icon{
+    background-position:0 -310px;
+}
+section div:hover span{
+    color:#fff;
+}
+.right:hover{
+    background-color:#DA324D;
+}
+.right:hover span.icon_sell{
+    background-position:-100px -310px;
+}
+/*中间主体内容结束*/

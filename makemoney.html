@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/makemoney.css"/>
+    <title></title>
+</head>
+<body>
+    <!-- 1,顶部收藏宝贝网等信息-->
+    <div id="top">
+        <div>
+            <p>
+                <a href="index.html" class="star">收藏宝贝网</a>
+                &nbsp;&nbsp;您好！&nbsp;请[<a href="login.html">登录</a>][<a href="register.html">免费注册</a>]
+            </p>
+            <ul>
+                <li class="l1">
+                    <a href="#">我的后台</a>
+                    <b></b>
+                    <ul class="u1">
+                        <li><a href="#">试用品</a></li>
+                        <li><a href="#">邦麦网</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">邦麦网</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="#">联网平台</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="#" class="phone">手机版</a>
+                    <b class="no-img"></b>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <!-- 2,宝贝网logo，搜索框等信息-->
+        <header id="header">
+            <a href="packets.html"><img src="images/logo.png" alt=""/></a>
+            <div class="search">
+                <p>
+                    <input type="search" placeholder="商品免费领取，还能赚高额奖励"/>
+                    <a href="#">搜索</a>
+                </p>
+                <p>
+                    热门搜索：
+                    <a href="#">毛衣</a>
+                    <a href="#">雪纺裙</a>
+                    <a href="#">靴子</a>
+                    <a href="#">打底裤</a>
+                    <a href="#">手提包</a>
+                    <a href="#">T恤</a>
+                </p>
+            </div>
+            <div>
+                <p><a href="#"><b></b>试客客服：3063148061</a></p>
+                <p><a href="#"><b></b>商家客服：860906186</a></p>
+            </div>
+        </header>
+        <!-- 3,主导航-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">所有宝贝分类 <b></b></a>
+                    <ul>
+                        <li><a href=""><b></b>潮流女装</a></li>
+                        <li><a href=""><b></b>精品男装</a></li>
+                        <li><a href=""><b></b>鞋子箱包</a></li>
+                        <li><a href=""><b></b>时尚配饰</a></li>
+                        <li><a href=""><b></b>美食特产</a></li>
+                        <li><a href=""><b></b>数码家电</a></li>
+                        <li><a href=""><b></b>家居日用</a></li>
+                        <li><a href=""><b></b>美容护肤</a></li>
+                        <li><a href=""><b></b>母婴用品</a></li>
+                        <li><a href=""><b></b>综合商品</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="freegoods.html">免费商品</a></li>
+                <li><a href="packets.html">红包活动</a></li>
+                <li><a href="makemoney.html" class="active">天天赚</a></li>
+                <li>
+                    <a href="guider.html">新手导航</a>
+                    <img src="images/sqHot.gif" alt=""/>
+                </li>
+            </ul>
+        </nav>
+        <!-- 4,免费试用指导-->
+        <p class="try"><a href="#">天天赚指导</a></p>
+        <!-- 5,宝贝分类栏-->
+        <ul id="classify">
+            <li>宝贝分类：</li>
+            <li><a href="#" class="current">不限</a></li>
+            <li><a href="#" id="dress">潮流女装 </a></li>
+            <li><a href="#" id="suit">精品男装 </a></li>
+            <li><a href="#" id="shoes">鞋子箱包</a></li>
+            <li><a href="#" id="decoration">时尚配饰 </a></li>
+            <li><a href="#" id="food">美食/特产</a></li>
+            <li><a href="#" id="electrical">数码家电</a></li>
+            <li><a href="#" id="daily">家居日用</a></li>
+            <li><a href="#" id="cosmetics">美容护肤 </a></li>
+            <li><a href="#" id="baby">母婴用品 </a></li>
+            <li><a href="#" id="others">综合试用</a></li>
+        </ul>
+        <!-- 6,试用主题内容-->
+        <section>
+            <!-- 6.1左侧商品具体信息-->
+            <div id="tryLeft">
+                <!-- 分类信息-->
+                <div class="sort">
+                    <a href="#" class="color">
+                        最新上线
+                        <i></i>
+                    </a>
+                    <a href="#" class="black">
+                        任务预告
+                    </a>
+                    <a href="#" class="current" id="total">
+                        综合
+                        <i></i>
+                    </a>
+                    <a href="#" id="copies">
+                        总份数
+                        <b></b>
+                        <i></i>
+                    </a>
+                    <a href="#" id="packet">
+                        奖励
+                        <b></b>
+                        <i></i>
+                    </a>
+                    <a href="#" id="rest">
+                        剩余时间
+                        <b></b>
+                        <i></i>
+                    </a>
+                        <input type="text" name="keyword" placeholder="请输入关键词搜索" id="keyword"/>
+                        <button id="search">搜索</button>
+                </div>
+                <!-- 具体图片详情-->
+                <ul class="list lessMargin">
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170804104410_65346_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】户外广场舞台音响设备</a></dd>-->
+                            <!--<dd><span>总份数: <b>30</b></span><span>剩余: <b>1</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/171424_77579_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】钢制文件柜铁皮柜防火透明</a></dd>-->
+                            <!--<dd><span>总份数: <b>20</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170730140038_65140_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】持久服帖速白霜提亮美白</a></dd>-->
+                            <!--<dd><span>总份数: <b>80</b></span><span>剩余: <b>2</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170805142157_41995_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】长袖衬衫直筒百搭宽松衬衣&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>总份数: <b>50</b></span><span>剩余: <b>6</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/155049_52636_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】条纹针织衫女修身低圆领</a></dd>-->
+                            <!--<dd><span>总份数: <b>50</b></span><span>剩余: <b>5</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170805153934_89459_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】软膜天花卡布灯箱透光</a></dd>-->
+                            <!--<dd><span>总份数: <b>10</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170729134035_16224_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】补水面膜保湿水精华提亮</a></dd>-->
+                            <!--<dd><span>总份数: <b>98</b></span><span>剩余: <b>3</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/172331_53462_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】舞台音响套装专业音箱</a></dd>-->
+                            <!--<dd><span>总份数: <b>25</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170805115043_52316_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】铁皮石斛鲜条仿野生种植&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>总份数: <b>60</b></span><span>剩余: <b>21</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/091656_46483_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】poe交换机10口8路供电</a></dd>-->
+                            <!--<dd><span>总份数: <b>73</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/140851_56173_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】10口8路标准poe交换机</a></dd>-->
+                            <!--<dd><span>总份数: <b>47</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170805122717_33079_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】秋装韩版牛仔短外套&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>总份数: <b>20</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.80元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/110824_94305_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】私处保养粉粉去黑色素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>总份数: <b>46</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/142714_10385_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】保湿唇釉染唇液不脱色</a></dd>-->
+                            <!--<dd><span>总份数: <b>92</b></span><span>剩余: <b>5</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/113227_45139_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】多功能实用五金工具架</a></dd>-->
+                            <!--<dd><span>总份数: <b>20</b></span><span>剩余: <b>8</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/172810_82258_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】五金工具架金属便捷灵活</a></dd>-->
+                            <!--<dd><span>总份数: <b>10</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/140906_38071_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】酒红色石榴石多层珠串手链</a></dd>-->
+                            <!--<dd><span>总份数: <b>100</b></span><span>剩余: <b>8</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170801110023_55690_rez-200-200.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】多效气垫BB霜遮瑕滋养</a></dd>-->
+                            <!--<dd><span>总份数: <b>65</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170805110709_13625_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】宽松套头罩衫薄款个性</a></dd>-->
+                            <!--<dd><span>总份数: <b>20</b></span><span>剩余: <b>0</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/112628_62738_rez-200-200.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【天天赚】显瘦修身百搭连衣裙女</a></dd>-->
+                            <!--<dd><span>总份数: <b>100</b></span><span>剩余: <b>89</b>份</span></dd>-->
+                            <!--<dd><span>奖励：<b>￥0.50元</b></span></dd>-->
+                            <!--<dd><a href="#">做任务</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                </ul>
+                <p class="page">
+                    <!--<a href="#">上一页</a>-->
+                    <!--<a href="#">1</a>-->
+                    <!--<a href="#">2</a>-->
+                    <!--<a href="#">3</a>-->
+                    <!--<a href="#">4</a>-->
+                    <!--<a href="#">5</a>-->
+                    <!--<a href="#">...315</a>-->
+                    <!--<a href="#">下一页</a>-->
+                    <!--<a href="#">共315页</a>-->
+
+                </p>
+            </div>
+            <!-- 6.2右侧买家，热门试用等信息-->
+            <div id="tryRight">
+                <div class="buyer">
+                    <h4>正在赚奖励的买家</h4>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">aq永泉</a></dd>
+                        <dd>2017-08-06 00:05:05</dd>
+                        <dd>
+                            <b>正在参与</b>
+                            <a href="#">显瘦修身百搭连衣裙女</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">雅琳</a></dd>
+                        <dd>2017-08-06 00:13:53</dd>
+                        <dd>
+                            <b>正在参与</b>
+                            <a href="#">多功能实用五金工具架</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">waq王永泉</a></dd>
+                        <dd>2017-08-06 00:19:02</dd>
+                        <dd>
+                            <b>正在参与</b>
+                            <a href="#">浅口圆头平底蛋卷鞋女</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">雅琳</a></dd>
+                        <dd>2017-08-06 00:26:38</dd>
+                        <dd>
+                            <b>正在参与</b>
+                            <a href="#">铁皮石斛鲜条仿野生种植</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">雅琳</a></dd>
+                        <dd>2017-08-06 00:38:50</dd>
+                        <dd>
+                            <b>正在参与</b>
+                            <a href="#">浅口圆头平底蛋卷鞋女</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="hot">
+                    <h4>热门试用</h4>
+                    <div>
+                        <a href="#"><img src="images/20170801151202_67957_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">送 女款莫代尔内裤2条  8月2日</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170726145038_71984_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">拍吊灯 送大白 小台灯一个</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170704163023_15541_rez-180-180.png" alt=""/></a>
+                        <p><a href="#">拍金属探测器送2只驱蚊手环</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170723231859_42986_rez-180-180.png" alt=""/></a>
+                        <p><a href="#">送小凳子1个 支持花呗信用卡</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170725102050_53526_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">拍床头柜送 小风扇一个</a></p>
+                    </div>
+                </div>
+                <h3>免责声明</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;宝贝网“天天赚”活动均由合作商家提供，请广大宝贝试客务必遵守相关任务规定，保证质量的
+                    完成任务，才能获得相应的奖励。商家量子统计全程监控，如若试客使用作弊手段，包含但不限于（多个账号重复参与、不
+                    通过关键词搜索进店、提交不合格的任务截图等），宝贝网将有权取消该试客的所有任务资格，并扣除相应的奖励；情节严
+                    重者将作屏蔽、封号及冻结资金处理。请宝贝试客们务必遵守宝贝网规则。
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- 10,关于我们等页脚信息-->
+    <div id="bottom">
+        <p>
+            <span><a href="#">关于我们</a><b></b></span>
+            <span><a href="#">商务合作</a><b></b></span>
+            <span><a href="#">广告服务</a><b></b></span>
+            <span><a href="#">用户协议</a><b></b></span>
+            <span><a href="#">帮助中心</a><b></b></span>
+            <span><a href="#">诚聘英才</a><b></b></span>
+        </p>
+        <p>版权所有：&copy;2014 <a href="#">宝贝网</a>Baobeio.com
+            <a href="#">桂ICP备14000064号-1</a> 桂B2-20150138
+            <a class="police" href="#">桂公网安备45010702000049<i class="baidu"></i></a>
+        </p>
+        <p>
+            <a href="#"><img src="images/logo_03.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_04.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_05.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_02.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_09.jpg" alt=""/></a>
+            <a href="#"><img src="images/sm_124x47.png" alt=""/></a>
+        </p>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/makemoney/makemoney.js"></script>
+    <script src="js/makemoney/makemoney_classify.js"></script>
+    <script src="js/makemoney/makemoney_search.js"></script>
+
+</body>
+</html>

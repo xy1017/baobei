@@ -1,0 +1,779 @@
+/*css样式重置*/
+h1,h2,h3,h4,h5,h6,dl,ul,ol,li,p,dd{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#000000;
+}
+a:hover{
+    /*字体色*/
+    text-decoration:underline ;
+    color: #E03194;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    color:#000000;
+    overflow-x: hidden;
+    height:3630px ;
+    overflow-y: auto;
+}
+/*1,顶部收藏宝贝网等信息开始*/
+#top{
+    /*背景色，*/
+    background-color: #F7F7F7;
+}
+#top>div{
+    /*宽度，居中对齐,上下内边距，居中对齐，弹性布局容器*/
+    margin:0 auto;
+    padding:3px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1200px;
+    height:27px;
+    box-sizing: border-box;
+}
+#top>div>ul {
+    /*弹性布局*/
+    display: flex;
+}
+#top>div>ul>li{
+    /*相对定位配合下拉菜单*/
+    position:relative;
+    width:80px;
+    height:28px;
+    text-align: center;
+    line-height: 26px;
+    box-sizing: border-box;
+    border:1px solid transparent;
+    border-bottom: none;
+}
+
+a.star{
+    /*引入背景图，变为行内块，宽，高，左内边距*/
+    background:url(../images/headerIco.gif) no-repeat;
+    background-position:3px 2px ;
+    display: inline-block;
+    padding-left: 20px;
+}
+#top p a:hover{
+    /*悬停时字体颜色*/
+    color:#000;
+}
+#top div ul li ul.dropdown-menu{
+    /*绝对定位，宽度，左右下边框，背景色，内边距，box-sizing*/
+    position: absolute;
+    left:-1px;
+    width:80px;
+    border:1px solid #EBEBEB;
+    border-top:none ;
+    background-color: white;
+    padding:0;
+    height:0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .2s linear;
+    /*隐藏*/
+}
+
+#top div ul li ul.dropdown-menu li:hover{
+    background-color: #ddd;
+}
+#top>div>ul>li:hover{
+    /*上左右边框，背景色，*/
+    border:1px solid #EBEBEB;
+    border-bottom: none;
+    background-color: white;
+}
+/*1,顶部收藏宝贝网等信息结束*/
+/*2,宝贝网logo，搜索框等信息开始*/
+div.container{
+    /*宽度,居中，上下内边距*/
+    width:1200px;
+    padding:10px;
+    margin:0 auto;
+    min-height: 2000px;
+}
+#header{
+    /*弹性布局,宽度，box-sizing两端对齐，居中,高度*/
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    height:115px;
+}
+#header div.search p:first-child{
+    /*高度，宽度，box-sizing ,背景颜色，弹性布局，两端对齐,上外边距*/
+    height: 44px;
+    width: 550px;
+    box-sizing: border-box;
+    background-color: #DA314C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0 5px 0;
+}
+#header div.search p:first-child input{
+    /*宽度，高度，行高，左内边距，背景图,box-sizing,左外边距,背景颜色，下外边距*/
+    width: 442px;
+    height:40px;
+    line-height: 40px;
+    padding-left:35px;
+    outline: none;
+    border:none;
+    margin-left: 2px;
+    box-sizing: border-box;
+    background: url("../images/mxa.png") no-repeat 10px 12px;
+    background-color: #FFFFFF;
+    /*字体颜色，文字垂直居中，字体大小*/
+    color: #757575;
+    font-size:16px ;
+    vertical-align: middle;
+}
+#header div.search p:first-child a{
+    /*去下划线，文字颜色，大小，居中,宽度*/
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    width:108px;
+    text-align: center;
+}
+#header div.search p:nth-child(2){
+    /*字体颜色*/
+    color:#CCCCCC;
+}
+#header div.search p:nth-child(2) a{
+    /*字体颜色,去下划线*/
+    color:#CCCCCC;
+    text-decoration: none;
+}
+#header div:nth-child(3)  b{
+    /*背景图，*/
+    display: inline-block;
+    background: url("../images/ico.png") no-repeat -32px -48px;
+    width:25px;
+    height:23px;
+}
+
+
+/*2,宝贝网logo，搜索框等信息结束*/
+/*3,主导航开始*/
+nav>ul{
+    /*弹性布局,相对定位,高度，行高box-sizing,字体大小*/
+    display: flex;
+    position: relative;
+    min-height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+nav>ul>li+li{
+    /*左外边距*/
+    margin-left:100px;
+}
+nav>ul>li:nth-child(9){
+    /*绝对定位靠右对齐*/
+    position: absolute;
+    right:0px;
+}
+nav>ul>li:first-child{
+    /*宽，背景色，box-sizing，相对定位*/
+    width:182px;
+    background-color: #DA314C;
+    box-sizing: border-box;
+    position: relative;
+}
+nav>ul>li:first-child ul{
+    /*绝对定位,宽度，边框,内边距，高度，背景色*/
+    position: absolute;
+    width: 182px;
+    border:2px solid #DA314C;
+    box-sizing: border-box;
+    padding:5px 10px;
+    height:454px;
+    background-color: #F4F4F4;
+    z-index: 20;
+}
+nav>ul>li:first-child ul li{
+    /*文本居中,下外边距*/
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+nav>ul>li:first-child ul li a:hover{
+    /*去除下划线*/
+    text-decoration: none;
+}
+nav>ul>li:first-child span{
+    /*内边距，背景图,文字颜色*/
+    padding:5px 40px 5px 60px;
+    background:url("../images/allcty.png") no-repeat 30px 7px;
+    text-align: center;
+    color:#FFFFFF;
+}
+.active{
+    color:#E4393C;
+    font-weight: 600;
+}
+nav>ul>li:nth-child(7) a{
+    /*字体颜色，大小，背景图，加粗，去除下划线 左内边距*/
+    color:#DA314C;
+    font-size: 16px;
+    background: url("../images/tel.png") no-repeat 0px 1px ;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 30px;
+}
+nav>ul>li:nth-child(6){
+    /*相对定位*/
+    position: relative;
+}
+nav>ul>li:nth-child(6) img{
+    /*绝对定位*/
+    position: absolute;
+    top:-13px;
+    right:-20px;
+}
+/*3,主导航结束*/
+/*4,轮播图区域开始*/
+#slider{
+    /*宽度，高度，边框*/
+    width:1920px;
+    height: 450px;
+    border-top:2px solid #DA314C;
+    margin-left: -348px;
+    overflow: hidden;
+    position: relative;
+}
+#slider #imgs {
+    position:absolute;
+    top: 0;  left: 0;
+    height:450px;
+}
+#slider #imgs li{
+    float:left;
+    z-index:0;
+}
+#slider #indexs {
+    position:absolute;
+    bottom:30px;
+    right:850px;
+}
+#slider #indexs li {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    background: #3e3e3e;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left:20px;
+}
+#slider #indexs li:hover,#slider #indexs li.hover {
+    background:#b61b1f;
+}
+/*4,轮播图区域结束*/
+/*5,轮播图下的4幅图片信息开始*/
+div.img{
+    /*弹性布局,上下外边距,两端对齐*/
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+div.img img{
+    /*右外边距*/
+    margin-right:4px;
+}
+div.img img:hover {
+    /*放大，外边框阴影*/
+    transform:scale(1.05);
+    transition: transform 0.5s linear;
+    box-shadow: 0 0 5px yellow;
+}
+
+/*5,轮播图下的4幅图片信息结束*/
+/*banner及ul，li属性设定开始*/
+#banner img{
+    width:220px;
+    height:220px;
+}
+.shopList{
+    height: 20px;
+    margin:10px 0 20px 0;
+    font-size: 18px;
+}
+.shopList>li{
+    float: left;
+    width:92px;
+}
+.shopList>li a{
+    padding:5px 10px;
+}
+.packet dl,.free dl,.money dl{
+    float: left;
+    margin: 0 5px 0 45px;
+    height:300px;
+    width:250px;
+}
+.packet dt ,.free dt ,.money dt {
+    width:220px;
+    height:220px;
+}
+.packet dt b,.free dt b,.money dt b{
+    /*绝对定位，引入背景图*/
+    position:relative;
+    display:inline-block;
+    width:37px;
+    height:37px;
+    background: url("../images/newproduct.png") no-repeat;
+    left:0;
+    top:-224px;
+}
+.firstDd{
+    margin:8px 0 5px 0;
+    height:37px;
+    width:220px;
+}
+.lastDd{
+    width:260px;
+    height:20px;
+}
+#banner{
+    height:360px;
+    position:relative;
+}
+.mouseenter {
+/*绝对定位，宽度，高度，背景色*/
+position:  absolute;
+width:70px;
+height:4px ;
+background-color: #DA314C;
+top:25px;
+z-index: 100;
+left:10px;
+transition:all 0.2s ;
+}
+.mouseenterB{
+/*绝对定位，边框*/
+position: absolute;
+border: 5px solid transparent;
+border-top : 5px solid #DA314C;
+top:4px;
+left:30px;
+}
+.bColor{
+    color:#E4393C;
+    font-size: 14px;
+}
+.bFont{
+    font-size: 15px;
+}
+.sGray{
+    color:#aaa;
+}
+.aColor{
+    color:#E4393C;
+}
+.rect{
+    /*背景图，行内块*/
+    display: inline-block;
+    width:10px;
+    height:10px;
+    background: url("../images/ico.png") no-repeat ;
+    background-position: 5px  -333px;
+}
+.show{
+    display: block;
+}
+.hide{
+    display:none;
+}
+
+/*第二个及第三个li访问状态结束*/
+/*7,网页主题内容开始*/
+/*一层内容开始*/
+/*热门推荐开始*/
+div.title{
+    /*下边框,下内边距,弹性布局，两端对齐,居中*/
+    border-bottom: 2px solid #FAE0E9;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.title>h2{
+    /*字体颜色*/
+    color: #FF245C;
+}
+div.title>h2>b{
+    /*字体大小，颜色，去粗*/
+    font-size: 12px;
+    color:#CAC8C9;
+    font-weight: normal;
+}
+div.title>span>a>b{
+    /*宽，高，背景图,行内块*/
+    display: inline-block;
+    width:22px;
+    height:21px;
+    background: url("../images/cionRund.png") no-repeat 1px 1px ;
+}
+/*热门推荐结束*/
+/*热门推荐具体图片内容开始*/
+section div.first-picture ul{
+    /*边框，上下外边距,宽度，高度*/
+    width:1200px;
+    min-height:600px;
+    margin: 20px 0 20px 0;
+    border-top:1px solid #E7E7E7;
+    border-left:1px solid #E7E7E7;
+    /*弹性布局，允许换行*/
+    display: flex;
+    flex-wrap: wrap;
+}
+section div.first-picture ul li{
+    /*宽度，右下边狂,内边距*/
+    height:325px;
+    width:20%;
+    border-right:1px solid #E7E7E7;
+    border-bottom:1px solid #E7E7E7;
+    padding:10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+div.first-picture dt{
+    /*相对定位*/
+    position: relative;
+}
+
+div.first-picture dt a:nth-child(2){
+    /*绝对定位,宽，高，边框，背景颜色，字体颜色，居中，边框倒角，去除下划线*/
+    position: absolute;
+    top:79px;
+    right:56px;
+    width:94px;
+    height:28px;
+    border:2px solid #eec9d1;
+    background-color: #d3334d;
+    line-height: 28px;
+    color:#fff;
+    border-radius: 5px;
+    text-decoration: none;
+    /*隐藏*/
+    display:none;
+}
+div.first-picture dt:hover a:nth-child(2){
+    /*显现*/
+    display: block;
+}
+div.first-picture ul li dl dd:nth-child(2){
+    /*上下外边距*/
+    margin: 10px 0 10px 0;
+    height:38px;
+    text-align: left;
+}
+div.first-picture ul li dl dd:nth-child(3){
+    /*弹性布局，两端对齐,居中*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 21px;
+    /*字体颜色*/
+    color:#696969;
+}
+div.first-picture ul li dl dd:nth-child(3)>p>span{
+    /*加粗，颜色,*/
+    font-weight: bold;
+    color:#E52D61;
+}
+div.first-picture ul li dl dd:nth-child(3)>p>s{
+    /*左外边距,字体颜色*/
+    margin-left: 10px;
+    color:#CECCCD;
+}
+div.first-picture ul li dl dd:nth-child(3)>span img{
+    /*宽高，*/
+    width:19px;
+    height:19px;
+}
+/*热门推荐具体图片内容结束*/
+/*一层内容结束*/
+/*二层内容开始*/
+div.picture{
+    /*弹性布局,左右对齐*/
+    display: flex;
+    justify-content: space-between;
+}
+div.picture >div.left{
+    /*高度，边框,宽度*/
+    height:636px;
+    border: 1px solid #FA95A3;
+    width:252px;
+    box-sizing: border-box;
+}
+/*二层右侧内容开始*/
+div.picture >div.main{
+    /*上下外边距，上左边框，宽度，高度*/
+    margin: 8px 0 8px 0px;
+    border-top:1px solid #EEEEEE;
+    border-left:1px solid #EEEEEE;
+    box-sizing: border-box;
+    width:943px;
+    height:652px;
+}
+div.picture >div.main>ul{
+    /*弹性布局，允许换行*/
+    display:flex;
+    flex-wrap: wrap;
+}
+div.picture >div.main>ul>li{
+    /*宽度，高度，下右边框,居中显示,内边距*/
+    width:235.5px;
+    height:325px;
+    border-right:1px solid #EEEEEE;
+    border-bottom:1px solid #EEEEEE;
+    box-sizing: border-box;
+    padding:20px 20px 10px 20px;
+}
+div.picture >div.main>ul>li img{
+    /*宽度，高度*/
+    width:200px;
+    height:200px;
+}
+div.picture div.main dl dd:nth-child(2){
+    /*上下外边距，字体大小 */
+    margin:5px 0 5px 0;
+    font-size:13px;
+    height:34px;
+}
+div.picture div.main dl dd:nth-child(3){
+    /*下外边距，字体颜色*/
+    margin-bottom: 5px;
+    color:#BAB8B9;
+}
+div.picture div.main dl dd:nth-child(4){
+    /*弹性布局，左右对齐*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.picture div.main dl dd:nth-child(4) span{
+    /*，倒角，背景色，内边距，字体颜色*/
+    padding:4px 6px;
+    border-radius: 3px;
+    background-color: #F9D5D9;
+    color:#DF2E62;
+}
+div.picture div.main dl dd:nth-child(4) a{
+    /*字体颜色*/
+    color:#F896A3;
+}
+div.picture div.main dl dd:nth-child(4):hover div.main dd:nth-child(4) span{
+    background-color: #DE2948;
+    color:#FFFFFF;
+}
+div.picture div.main dl dd:nth-child(4):hover div.main dd:nth-child(4) a{
+    color:#DA314C;
+    text-decoration: none;
+}
+/*二层右侧内容结束*/
+/*二层左侧内容开始*/
+div.left{
+    box-sizing: border-box;
+    position: relative;
+}
+div.left div:first-child{
+    /*相对定位*/
+    position: relative;
+}
+div.left span.go{
+    /*绝对定位，边框倒角，内边距，背景色，*/
+    position: absolute;
+    border-radius: 18px;
+    padding:5px 8px;
+    background-color: black;
+    top:80px;
+    left:25px;
+}
+div.left span.go a{
+    /*字体颜色*/
+    color:white;
+}
+div.left span.go a:hover{
+    /*去除下划线*/
+    text-decoration: none;
+}
+div.left>div:nth-child(2){
+    /*绝对定位*/
+    position:absolute;
+    top:260px;
+}
+div.left div:nth-child(2) h3{
+    /*内边距*/
+    padding:5px 0 5px 15px ;
+    color:white;
+}
+div.left div:nth-child(2) h3 a{
+    /*字体颜色*/
+    color:white;
+}
+div.left div:nth-child(2) h3 a:hover{
+    /*字体颜色，去除下划线*/
+    color:white;
+    text-decoration: none;
+}
+div.left div:nth-child(2)>div{
+    /*上外边距*/
+    margin-top: 20px;
+}
+div.left div:nth-child(2)>div dl{
+    /*弹性布局,下外边距,居中显示*/
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+div.left div:nth-child(2)>div dl dt{
+    /*左右外边距*/
+    margin-right: 20px;
+    margin-left: 10px;
+}
+div.left div:nth-child(2)>div dl dt img{
+    /*边框倒角*/
+    border-radius: 50%;
+}
+div.left div:nth-child(2)>div dd p:first-child{
+    /*下外边距*/
+    margin-bottom: 5px;
+}
+div.left div:nth-child(2)>div dd p:first-child a:hover{
+    /*颜色，去除下划线*/
+    color:#000000;
+    text-decoration: none;
+}
+/*二层左侧内容结束*/
+/*二层内容结束*/
+/*7,网页主题内容结束*/
+/*9,页脚信息开始*/
+footer{
+    /*背景色，宽度，高度,上左右内边距*/
+    min-height:220px;
+    background-color: #F7F7F7;
+    box-sizing: border-box;
+    padding:30px 30px 0 30px ;
+    margin-top: 30px;
+}
+footer>ul{
+    /*弹性布局*/
+    display: flex;
+    justify-content: space-around;
+}
+footer>ul>li{
+    /*右边框,右内边距,高度*/
+    border-right:1px dotted #BFBFBF;
+    padding-right:50px;
+    height:190px;
+}
+footer>ul>li:nth-child(6){
+    /*去除右边框*/
+    border-right:none;
+}
+footer>ul h4{
+    /*下外边距*/
+    margin-bottom:15px;
+}
+footer>ul>li>ul>li+li{
+    /*下外边距*/
+    margin-bottom: 6px;
+}
+footer>ul>li>ul>li a:hover{
+    /*去除下划线*/
+    text-decoration: none;
+}
+.center{
+    text-align: center;
+}
+.margin-top{
+    margin-top: 15px;
+}
+li.qq-img>p{
+    /*内边距，*/
+    padding:5px 0 10px 5px ;
+
+}
+li.qq-img>p b{
+    /*引入背景图*/
+    display: inline-block;
+    background: url("../images/ico.png") no-repeat -32px -48px;
+    width:25px;
+    height:23px;
+}
+li.qq-img>p:nth-child(2){
+    /*去除上内边距*/
+    padding-top:0;
+}
+li.qq-img span{
+    /*引入图片,居中,字体颜色，做内边距，*/
+    display: inline-block;
+    width:170px;
+    height:36px;
+    background: url("../images/b_tel.png") no-repeat;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 20px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    color:white;
+}
+/*9,页脚信息结束*/
+/*10,关于我们等页脚信息开始*/
+#bottom{
+    /*宽度，高度，背景色，内边距，文本颜色*/
+    min-height:160px;
+    background-color: #333333;
+    padding:20px 0 5px 100px;
+    box-sizing: border-box;
+    color:#fff;
+    text-align: center;
+}
+#bottom a{
+    /*文本颜色，去除下划线*/
+    color:#fff;
+    text-decoration: none;
+}
+#bottom p:first-child a:hover{
+    /*文本颜色*/
+    color:#DA314C;
+}
+a.police{
+    /*引入背景图,左内边距，行内块*/
+    display: inline-block;
+    padding-left:30px;
+    background: url("../images/beian_gov.png") no-repeat;
+}
+i.baidu{
+    /*引入背景图,行内块，宽度高度，左外边距*/
+    background: url("../images/21.gif") no-repeat;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left: 5px;
+}
+#bottom p:nth-child(3) img{
+    /*右外边距 */
+    margin-right: 5px;
+}
+#bottom p:nth-child(3) img{
+    /*统一高度宽度*/
+    width:92px;
+    height:33px;
+}
+#bottom p:nth-child(2){
+    /*上下外边距*/
+    margin: 20px 0 20px 0;
+}
+/*10,关于我们等页脚信息结束*/

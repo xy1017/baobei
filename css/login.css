@@ -1,0 +1,181 @@
+/*css样式重置*/
+h1,h2,h3,h4,h5,h6,dl,ul,ol,li,p,dd{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#666666;
+}
+a:hover{
+    /*字体色*/
+    text-decoration:none ;
+    color: #666666;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    background-color: #fff;
+    height:700px;
+}
+/*头部信息开始*/
+.header{
+    /*背景颜色，高度，*/
+    height:100px;
+    background-color: #DA324C;
+}
+.top{
+    /*弹性布局，左右对齐，宽度，内边距,居中*/
+    display: flex;
+    justify-content: space-between;
+    width:1000px;
+    box-sizing: border-box;
+    padding:10px 0;
+    margin: 0 auto;
+    color:#fff;align-items: center;
+}
+.top >a{
+    /*居中*/
+    margin-top: 10px;
+
+}
+.top p{
+    position: relative;
+    top:40px;
+}
+.top p b{
+    display: inline-block;
+    height:11px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-right: 1px solid #fff;
+}
+.top a{
+    color:#fff;
+}
+.top a:hover{
+    text-decoration: underline;
+}
+/*中间主体内容开始*/
+section{
+    width: 1000px;
+    min-height:388px;
+    position: relative;
+    margin:0 auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 1px solid #E6E6E6;
+    box-shadow:-1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+}
+form{
+    margin-left: 20px;
+    width:500px;
+    padding: 20px;
+}
+form div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+h2{
+    color:#5E5E5E;
+    font-weight: 500;
+}
+div span{
+    font-size: 10px;
+}
+div span a{
+    color:#0083CE;
+}
+div span a:hover{
+    text-decoration: underline;
+    color:#0083CE
+}
+input{
+    margin-bottom: 20px;
+}
+.type{
+    width:295px;
+    padding:10px 10px 10px 30px;
+    border: 1px solid #e6e6e6;
+}
+.name{
+    background: url("../images/ico_login.png") 0 -81px no-repeat;
+}
+.pwd{
+    background: url("../images/ico_login.png") -1px -114px no-repeat;
+}
+.alert{
+    color:red;
+}
+form p:nth-child(6){
+    text-align: right;
+    margin-top: -10px;
+}
+form p:nth-child(6) a:hover{
+    color:#0083CE;
+    text-decoration: underline;
+}
+form input:nth-child(9){
+    width:330px;
+    padding:10px 20px;
+    background-color: #DA324C;
+    color:#fff;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+.size{
+    font-size: 20px;
+    color:blue;
+    text-align: center;
+    width:560px;
+    height:388px;
+    line-height: 388px;
+}
+/*中间主体内容结束*/
+/*10,关于我们等页脚信息开始*/
+.bottom{
+    /*宽度，高度，背景色，内边距，文本颜色*/
+    margin-top: 100px;
+    min-height:200px;
+    background-color: #FFFFFF;
+    padding:20px 0 5px 100px;
+    box-sizing: border-box;
+    color:#666666;
+    text-align: center;
+}
+.bottom span b{
+    display: inline-block;
+    padding:5px;
+    border-right: 1px solid #B77D7D;
+    margin-right: 5px;
+}
+.bottom span b.no-border{
+    border-right:0;
+}
+.bottom a{
+    /*文本颜色，去除下划线*/
+    color:#666666;
+    text-decoration: none;
+}
+.bottom a:hover{
+    color:#0083CE;
+    text-decoration: underline;
+}
+.bottom p:nth-child(2) a{
+    /*右外边距 */
+    margin-right: 5px;
+}
+.bottom p:nth-child(2) img{
+    /*统一高度宽度*/
+    width:92px;
+    height:33px;
+}
+.bottom p:nth-child(1){
+    /*上下外边距*/
+    margin: 20px 0 20px 0;
+}
+/*10,关于我们等页脚信息结束*/

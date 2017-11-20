@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/freegoods.css"/>
+    <title></title>
+</head>
+<body>
+    <!-- 1,顶部收藏宝贝网等信息-->
+    <div id="top">
+        <div>
+            <p>
+                <a href="index.html" class="star">收藏宝贝网</a>
+                &nbsp;&nbsp;您好！&nbsp;请[<a href="login.html">登录</a>][<a href="register.html">免费注册</a>]
+            </p>
+            <ul>
+                <li class="l1">
+                    <a href="guider.html">我的后台</a>
+                    <b></b>
+                    <ul class="u1">
+                        <li><a href="guider.html">试用品</a></li>
+                        <li><a href="#">邦麦网</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">邦麦网</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="#">联网平台</a>
+                    <b></b>
+                </li>
+                <li>
+                    <a href="#" class="phone">手机版</a>
+                    <b class="no-img"></b>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <!-- 2,宝贝网logo，搜索框等信息-->
+        <header id="header">
+            <a href="freegoods.html"><img src="images/logo.png" alt=""/></a>
+            <div class="search">
+                <p>
+                    <input type="search" placeholder="商品免费领取，还能赚高额奖励"/>
+                    <a href="#">搜索</a>
+                </p>
+                <p>
+                    热门搜索：
+                    <a href="#">毛衣</a>
+                    <a href="#">雪纺裙</a>
+                    <a href="#">靴子</a>
+                    <a href="#">打底裤</a>
+                    <a href="#">手提包</a>
+                    <a href="#">T恤</a>
+                </p>
+            </div>
+            <div>
+                <p><a href="#"><b></b>试客客服：3063148061</a></p>
+                <p><a href="#"><b></b>商家客服：860906186</a></p>
+            </div>
+        </header>
+        <!-- 3,主导航-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">所有宝贝分类 <b></b></a>
+                    <ul>
+                        <li><a href="#" ><b></b>潮流女装</a></li>
+                        <li><a href="#" ><b></b>精品男装</a></li>
+                        <li><a href="#" ><b></b>鞋子箱包</a></li>
+                        <li><a href="#"><b></b>时尚配饰</a></li>
+                        <li><a href="#" ><b></b>美食特产</a></li>
+                        <li><a href="#" ><b></b>数码家电</a></li>
+                        <li><a href="#"><b></b>家居日用</a></li>
+                        <li><a href="#" ><b></b>美容护肤</a></li>
+                        <li><a href="#" ><b></b>母婴用品</a></li>
+                        <li><a href="#" ><b></b>综合商品</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="freegoods.html" class="selected">免费商品</a></li>
+                <li><a href="packets.html">红包活动</a></li>
+                <li><a href="makemoney.html">天天赚</a></li>
+                <li>
+                    <a href="guider.html">新手导航</a>
+                    <img src="images/sqHot.gif" alt=""/>
+                </li>
+            </ul>
+        </nav>
+        <!-- 4,免费试用指导-->
+        <p class="try"><a href="#">免费试用指导</a></p>
+        <!-- 5,宝贝分类栏-->
+        <ul id="classify">
+            <li>宝贝分类：</li>
+            <li><span>不限</span></li>
+            <li><a href="#" id="dress">潮流女装 </a></li>
+            <li><a href="#" id="suit">精品男装 </a></li>
+            <li><a href="#" id="shoes">鞋子箱包</a></li>
+            <li><a href="#" id="decoration">时尚配饰 </a></li>
+            <li><a href="#" id="food">美食/特产</a></li>
+            <li><a href="#" id="electrical">数码家电</a></li>
+            <li><a href="#"  id="daily">家居日用</a></li>
+            <li><a href="#" id="cosmetics">美容护肤 </a></li>
+            <li><a href="#" id="baby">母婴用品 </a></li>
+            <li><a href="#" id="others">综合试用</a></li>
+        </ul>
+        <!-- 6,试用主题内容-->
+        <section>
+            <!-- 6.1左侧商品具体信息-->
+            <div id="tryLeft">
+                <!-- 分类信息-->
+                <div class="sort">
+                    <a href="#" class="clicked" id="total">
+                        综合
+                        <b></b>
+                    </a>
+                    <a href="#" id="price">
+                        价值
+                        <b></b>
+                    </a>
+                    <a href="#" id="fouces">
+                        人气
+                        <b></b>
+                    </a>
+                    <a href="#" id="copies">
+                        份数
+                        <b></b>
+                    </a>
+                    <a href="#" id="restTime">
+                        剩余时间
+                        <b></b>
+                    </a>
+                    <div>
+                        <label><input type="radio" name="posttype" value="1"/>免邮</label>
+                        <label><input type="radio" name="posttype" value="2"/>收邮</label>
+                        <input type="text" name="keyword" placeholder="请输入关键词搜索" id="keyword"/>
+                        <button id="search">搜索</button>
+                    </div>
+                </div>
+                <!-- 具体图片详情-->
+                <ul class="list">
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719134348_20817_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】送瘦脸V脸小脸精华液1瓶 去眼袋提拉紧致</a></dd>-->
+                            <!--<dd><span>份数: <b>30</b></span><span>已关注: <b>46</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719161134_25592_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】iPhone6s 苹果7Plus迪士尼手机壳</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>118</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/161933_79235_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】赠送全新料食品背心袋一捆 50个</a></dd>-->
+                            <!--<dd><span>份数: <b>30</b></span><span>已关注: <b>62</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/143631_60168_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】送 时尚卡通烟灰缸一个&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>份数: <b>10</b></span><span>已关注: <b>65</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170718140255_46101_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】防水12星座套组3瓶装 719</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>128</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719170547_54715_rez-220-220.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍童靴送成人PVC拖鞋一双</a></dd>-->
+                            <!--<dd><span>份数: <b>3</b></span><span>已关注: <b>95</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719164954_55366_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】炭焙铁观音浓香型250大包装</a></dd>-->
+                            <!--<dd><span>份数: <b>7</b></span><span>已关注: <b>122</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719160402_11617_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍牛仔裤 送男士T恤一件</a></dd>-->
+                            <!--<dd><span>份数: <b>3</b></span><span>已关注: <b>70</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/144807_26152_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】紫色指甲油梦幻紫罗兰&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>167</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719154449_29282_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】宽松T恤收藏加购优先审核</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>178</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719152452_54537_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】苹果品牌优质羽博数据线</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>137</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/153942_45059_rez-220-220.png" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】品牌羽博苹果线认证线&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>份数: <b>5</b></span><span>已关注: <b>133</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719140732_68525_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍连衣裙送 睡裙一件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></dd>-->
+                            <!--<dd><span>份数: <b>3</b></span><span>已关注: <b>153</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719115836_30514_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍迎宾灯送 实用工具箱一个</a></dd>-->
+                            <!--<dd><span>份数: <b>12</b></span><span>已关注: <b>63</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170719120220_89970_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍迎宾灯送 专用工具箱一个</a></dd>-->
+                            <!--<dd><span>份数: <b>12</b></span><span>已关注: <b>59</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zzVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<dl>-->
+                            <!--<dt><a href="#"><img src="images/20170703102837_18792_rez-220-220.jpg" alt=""/></a></dt>-->
+                            <!--<dd><a href="#">【免费】拍运动套装送时尚棒球帽1顶</a></dd>-->
+                            <!--<dd><span>份数: <b>10</b></span><span>已关注: <b>563</b>次</span></dd>-->
+                            <!--<dd><span>邮费：<b>免邮</b></span><img src="images/zsVip.gif" alt=""/></dd>-->
+                            <!--<dd><a href="#">免费申请</a></dd>-->
+                        <!--</dl>-->
+                    <!--</li>-->
+                </ul>
+                <p class="page">
+                    <!--<a href="#">上一页</a>-->
+                    <!--<a href="#">1</a>-->
+                    <!--<a href="#">2</a>-->
+                    <!--<a href="#">3</a>-->
+                    <!--<a href="#">4</a>-->
+                    <!--<a href="#">5</a>-->
+                    <!--<a href="#">...768</a>-->
+                    <!--<a href="#">下一页</a>-->
+                    <!--<a href="#">共768页</a>-->
+
+                </p>
+            </div>
+            <!-- 6.2右侧买家，热门试用等信息-->
+            <div id="tryRight">
+                <div class="buyer">
+                    <h4>正在抢宝贝的买家</h4>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">管理员快通过</a></dd>
+                        <dd>2017-07-20 21:13:06</dd>
+                        <dd>
+                            <b>申请了</b>
+                            <a href="#">拍手机版送杯垫</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/58_avatar_small.jpg" alt=""/></dt>
+                        <dd><a href="#">燕子姐姐</a></dd>
+                        <dd>2017-07-20 21:08:08</dd>
+                        <dd>
+                            <b>申请了</b>
+                            <a href="#">拍桌布送杯垫</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">伟未来幸福</a></dd>
+                        <dd>2017-07-20 21:05:34</dd>
+                        <dd>
+                            <b>申请了</b>
+                            <a href="#">拍桌布送杯垫</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">kaitou0</a></dd>
+                        <dd>2017-07-20 21:03:16</dd>
+                        <dd>
+                            <b>申请了</b>
+                            <a href="#">拍手机版送杯垫</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="images/noavatar_small.gif" alt=""/></dt>
+                        <dd><a href="#">管理员快通过</a></dd>
+                        <dd>2017-07-20 21:13:06</dd>
+                        <dd>
+                            <b>申请了</b>
+                            <a href="#">拍手机版送杯垫</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="hot">
+                    <h4>热门试用</h4>
+                    <div>
+                        <a href="#"><img src="images/20170630104903_99589_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">拍简约沙发 送天堂伞1把</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/102341_44566_rez-180-180.png" alt=""/></a>
+                        <p><a href="#">骑行护目镜防风沙镜</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170712165528_57070_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">拍男表送精致水仙双肩包</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170704104052_56253_rez-180-180.jpg" alt=""/></a>
+                        <p><a href="#">送时尚小布登1个，支持花呗</a></p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="images/20170712153004_77641_rez-180-180.png" alt=""/></a>
+                        <p><a href="#">送抱枕被1个,支持花呗</a></p>
+                    </div>
+                </div>
+                <h3>免责声明</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;宝贝网所有试用产品均由合作商家直接提供，
+                    杜绝一切非正规渠道来源的试用产品。宝贝网仅为用户提供商品试用渠道及信息交流平台，
+                    产品的使用效果因产品本身及用户的个体差异而有所不同。若会员在产品试用过程中有任何不适，
+                    请即时停用并直接与试用品提供商联系。因试用品提供商的产品和服务导致的任何瑕疵、过错、
+                    责任和纠纷，宝贝网不承担任何法律责任。
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- 10,关于我们等页脚信息-->
+    <div id="bottom">
+        <p>
+            <span><a href="#">关于我们</a><b></b></span>
+            <span><a href="#">商务合作</a><b></b></span>
+            <span><a href="#">广告服务</a><b></b></span>
+            <span><a href="#">用户协议</a><b></b></span>
+            <span><a href="#">帮助中心</a><b></b></span>
+            <span><a href="#">诚聘英才</a><b></b></span>
+        </p>
+        <p>版权所有：&copy;2014 <a href="#">宝贝网</a>Baobeio.com
+            <a href="#">桂ICP备14000064号-1</a> 桂B2-20150138
+            <a class="police" href="#">桂公网安备45010702000049<i class="baidu"></i></a>
+        </p>
+        <p>
+            <a href="#"><img src="images/logo_03.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_04.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_05.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_02.jpg" alt=""/></a>
+            <a href="#"><img src="images/logo_09.jpg" alt=""/></a>
+            <a href="#"><img src="images/sm_124x47.png" alt=""/></a>
+        </p>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/freegoods/freegoods.js"></script>
+    <script src="js/freegoods/freegoods_search.js"></script>
+    <script src="js/freegoods/freegoods_classify.js"></script>
+</body>
+</html>

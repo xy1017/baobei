@@ -1,0 +1,527 @@
+/*css样式重置*/
+h1,h2,h3,h4,h5,h6,dl,ul,ol,li,p,dd{
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#666666;
+}
+a:hover{
+    /*字体色*/
+    text-decoration:none ;
+    color: #DA314C;
+}
+body{
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    background-color: #F6F0DA;
+    min-height:1500px;
+}
+/*头部信息开始*/
+.header{
+    /*背景颜色，高度，*/
+    height:100px;
+    background-color: #D2BA96;
+}
+.top{
+    /*弹性布局，左右对齐，宽度，内边距,居中*/
+    display: flex;
+    justify-content: space-between;
+    width:1000px;
+    box-sizing: border-box;
+    padding:10px 0;
+    margin: 0 auto;
+}
+.top >a{
+    /*居中*/
+    margin-top: 10px;
+}
+.main{
+    /*背景色，宽度，居中*/
+    width:1000px;
+    margin: 0 auto;
+}
+.position{
+    /*上下内边距，下边框*/
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #DFDFDF;
+}
+.windows{
+    /*做外边距，引入背景图*/
+    padding-left:15px;
+    background: url("../images/ico.png") no-repeat 0px -476px;
+}
+/*头部信息结束*/
+/*section具体页面展开的内容开始*/
+.title{
+    /*上外边距*/
+    margin-top:10px;
+}
+.details{
+    /*上下外边距，弹性布局，两端对齐*/
+    display:flex;
+    margin-top:10px;
+    margin-bottom:10px;
+    justify-content: space-between;
+}
+.content{
+    /*宽度，高度，*/
+    width:593px;
+}
+.content p{
+    /*字体颜色,下外边距*/
+    color:#333333;
+    margin-bottom: 5px;
+}
+.content b{
+    /*颜色，大小*/
+    color:#FF2737;
+    font-size:18px;
+}
+.content span{
+    /*字体颜色，大小，加粗*/
+    color:#9B8155;
+    font-size:12px;
+    font-weight: bold;
+}
+.money{
+    /*引入背景图,高度,上下外边距,上下内边距*/
+    background: url("../images/main_bg1.jpg") no-repeat;
+    height:104px;
+    margin:10px 0 10px 0;
+    padding:30.5px;
+    box-sizing: border-box;
+}
+.money p:first-child{
+    /*左内边距，引入图片*/
+    padding-left:25px;
+    background: url("../images/ico.png") no-repeat -183px -637px;
+}
+.money p:first-child span{
+    /*字体大小*/
+    font-size: 15px;
+}
+.left-right{
+    /*弹性布局,上外边距,左右居中对齐，高度*/
+    display:flex;
+    margin-top:20px;
+    justify-content: space-between;
+    height:190px;
+}
+.left-right div:first-child>a{
+    /*背景图，行内块，内边距，文本颜色，加粗,高度*/
+    display:inline-block;
+    background: url("../images/all_ico.png") no-repeat 0 -944px;
+    width:125px;
+    height:40px;
+    text-align: center;
+    line-height:40px;
+    font-weight: bold;
+    color:#674D37;
+    font-size: 16px;
+    margin:20px 0 30px 0;
+}
+.share a{
+    /*行内块，宽度，高度，右外边距，引入背景图*/
+    display: inline-block;
+    width:16px;
+    height:16px;
+    margin-right:5px;
+    margin-bottom: -3px;
+}
+.share>div.plus{
+    /*行内块*/
+    display: inline-block;
+    /*相对定位*/
+    position: relative;
+}
+.share >a:first-child{
+    background: url("../images/icons_0_16.png") no-repeat 0px -1612px;
+}
+.share >a:nth-child(2){
+    background: url("../images/icons_0_16.png") no-repeat 0px -2652px;
+}
+.share >a:nth-child(3){
+    background: url("../images/icons_0_16.png") no-repeat 0px -52px;
+}
+.share >a:nth-child(4){
+    background: url("../images/icons_0_16.png") no-repeat 0px -104px;
+}
+.share >a:nth-child(5){
+    background: url("../images/icons_0_16.png") no-repeat 0px -260px;
+}
+.share>div.plus>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px 0px;
+}
+div.plus >div{
+    /*绝对定位  */
+    position: absolute;
+    top:-190px;
+    left:0px;
+    z-index: 1000;
+    /*宽度*/
+    width:200px;
+    /*隐藏*/
+    display: none;
+}
+div.plus:hover div.block{
+    /*展现*/
+    display:block ;
+}
+div.plus >div h4{
+    /*背景颜色，内边距*/
+    background-color: #F6F6F6;
+    padding:3px 0 3px 3px;
+}
+div.plus>div>p{
+    /*背景颜色，右对齐*/
+    background-color: #F6F6F6;
+    padding:3px 0 3px 3px;
+    height:20px;
+}
+div.plus>div>p>a{
+    /*有浮动*/
+    float:right;
+    width:40px;
+    /*左内边距，引入背景图*/
+    padding-left: 17px;
+    background:url("../images/icons_0_16.png") no-repeat 0px 0px;
+    line-height: 17px;
+}
+div.plus >div ul{
+    /*弹性布局，宽度高度，允许换行*/
+    display: flex;
+    min-height: 300px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /*背景颜色*/
+    background-color: #fff;
+    /*内边距*/
+    padding:20px 10px 10px 20px;
+}
+
+div.plus >div ul li>a{
+    /*字体大小*/
+    display: inline-block;
+    font-size: 12px;
+    width:80px;
+    box-sizing: border-box;
+    height:25px;
+    line-height: 25px;
+    /*左内边距，引入背景图*/
+    padding-left: 17px;
+    /*居中*/
+    text-align: center;
+}
+div.plus >div ul li>a:first-child{
+    background: url("../images/icons_0_16.png") no-repeat 0 -2440px;
+}
+div.plus>div ul li:nth-child(2)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0 -48px;
+}
+div.plus >div ul li:nth-child(3)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -100px;
+}
+div.plus >div ul li:nth-child(4)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -3066px;
+}
+div.plus >div ul li:nth-child(5)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -1609px;
+}
+div.plus >div ul li:nth-child(6)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -204px;
+}
+div.plus >div ul li:nth-child(7)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -256px;
+}
+div.plus >div ul li:nth-child(8)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -2544px;
+}
+div.plus >div ul li:nth-child(9)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -308px;
+}
+div.plus >div ul li:nth-child(10)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -360px;
+}
+div.plus >div ul li:nth-child(11)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -723px;
+}
+div.plus >div ul li:nth-child(12)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -464px;
+}
+div.plus >div ul li:nth-child(13)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -151px;
+}
+div.plus >div ul li:nth-child(14)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -2648px;
+}
+div.plus >div ul li:nth-child(15)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -984px;
+}
+div.plus >div ul li:nth-child(16)>a{
+    background: url("../images/icons_0_16.png") no-repeat 0px -3116px;
+}
+div.plus >div ul li>a:hover{
+    /*背景色，字体色*/
+    background-color: #F3F3F3;
+    color:#565656;
+    border-radius: 3px;
+}
+.move{
+    /*向右移动对齐*/
+    margin-left:-25px;
+}
+.api{
+    /*相对定位*/
+    position: relative;
+}
+.api>p{
+    /*绝对定位，引入背景图，*/
+    background: url("../images/all_ico.png") no-repeat -186px -677px;
+    position: absolute;
+    width:14px;
+    height:164px;
+    left:-25px;
+    bottom:-5px;
+}
+.api div p{
+    /*下外边距*/
+    margin-bottom: 18px;
+}
+/*section具体页面展开的内容结束*/
+/*申请会员等内容开始*/
+/*左侧*/
+.discuss{
+    /*弹性布局，左右对齐，高度,上下外边距*/
+    display:flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+.left{
+    /*宽度*/
+    width:205px;
+    text-align: center;
+}
+.left h3{
+    /*上下外边距，背景颜色，内边距，文本颜色*/
+    margin: 20px 0 0px 0;
+    background-color: #E8DDAF;
+    padding:5px 10px;
+    color:#333333;
+    text-align: center;
+}
+.left>p{
+    /*背景颜色,内边距,字体颜色*/
+    background-color: #FFFAF5;
+    padding:10px 5px;
+    color:#555555;
+}
+.tips{
+    /*背景色*/
+    background-color: #FFFAF5;
+    text-align: center;
+}
+.tips>div{
+    /*相对定位,下外边距*/
+    position: relative;
+}
+.tips div>a{
+    /*绝对定位*/
+    position: absolute;
+    /*宽高，背景色内边距*/
+    width:180px;
+    background-color:#835B35 ;
+    bottom:0px;
+    left:12px;
+    /*透明度*/
+    opacity: 0.7;
+    box-sizing: border-box;
+    color:#fff;
+    font-size:12px;
+    height:30px;
+    line-height: 30px;
+    transition: opacity 0.1s linear;
+}
+.tip p:hover div>a{
+    /*透明度为0.7，从下向上过度*/
+
+}
+
+/*右侧*/
+.right{
+    /*，高度*/
+    min-height:755px;
+    width:780px;
+}
+.right>ul{
+    /*弹性布局，*/
+    display: flex;
+}
+.right>ul>li{
+    /*相对定位*/
+    position: relative;
+}
+.pictures>ul{
+    /*绝对定位,弹性布局，允许换行,宽度*/
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width:780px;
+    top:17px;
+    left:-55px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:20px 19.5px 0 19.5px;
+}
+.pictures li{
+    /*宽度,高度*/
+    width:110px;
+    height:145px;
+    box-sizing: border-box;
+    /*居中*/
+    text-align: center;
+}
+.pictures>ul img{
+    /*宽度,  边框，边距*/
+    width:100px;
+    height:100px;
+    border:2px solid #DADADA;
+    padding:2px;
+}
+.pictures>ul img:hover{
+    /*边框颜色*/
+    border-color:#DC314D;
+    transition: border-color 0.5s ;
+}
+.pictures p{
+    /*居中*/
+    position: absolute;
+    bottom:-20px;
+    width:741px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.pictures p a{
+    /*内边距，圆形，背景色*/
+    padding:3px 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    /*边框*/
+    border:1px solid #D0D0D0;
+}
+.pictures p a:first-child{
+    /*字体颜色，边框颜色*/
+    color:#CC0000;
+    border-color:#CC0000;
+}
+.pictures p a:nth-child(6){
+    /*无背景色，无边框*/
+    background-color:transparent;
+    border:none;
+}
+.pictures p a:nth-child(6):hover{
+    /*有下划线*/
+    text-decoration: underline;
+}
+/*申请会员等内容结束*/
+/*10,关于我们等页脚信息开始*/
+.bottom{
+    /*宽度，高度，背景色，内边距，文本颜色*/
+    min-height:200px;
+    background-color: #FFFFFF;
+    padding:20px 0 5px 100px;
+    box-sizing: border-box;
+    color:#666666;
+    text-align: center;
+}
+.bottom div{
+    margin-bottom: 30px;
+}
+.bottom div a{
+    /*做内边距，右外边距,*/
+    margin-right:70px;
+    /*字体大小,加粗，居中*/
+    font-size:16px;
+    font-weight: bold;
+    display: inline-block;
+    height:50px;
+}
+.bottom div b{
+    /*行内块，宽高，引入北京，右外边距*/
+    display: inline-block;
+    width:50px;
+    height:38px;
+    margin-right: 10px;
+    margin-bottom: -15px;
+}
+b.yan{
+    background: url("../images/foot02.png") no-repeat -5px 0px;
+}
+.bottom div a:hover b.yan{
+    /*变换图片*/
+    background: url("../images/foot02.png") no-repeat -5px -55px;
+}
+b.star{
+    background: url("../images/foot02.png") no-repeat -75px 0px;
+}
+.bottom div a:hover b.star{
+    /*变换图片*/
+    background: url("../images/foot02.png") no-repeat -74px -55px;
+}
+b.hand{
+    background: url("../images/foot02.png") no-repeat -143px 0px;
+}
+.bottom div a:hover b.hand{
+    /*变换图片*/
+    background: url("../images/foot02.png") no-repeat -143px -55px;
+}
+b.send{
+    background: url("../images/foot02.png") no-repeat -200px 0px;
+}
+.bottom div a:hover b.send{
+    /*变换图片*/
+    background: url("../images/foot02.png") no-repeat -200px -55px;
+}
+.bottom div a:hover{
+    color:#DA314C;
+}
+.bottom a{
+    /*文本颜色，去除下划线*/
+    color:#666666;
+    text-decoration: none;
+}
+.bottom p:first-child a:hover{
+    /*文本颜色*/
+    color:#DA314C;
+}
+a.police{
+    /*引入背景图,左内边距，行内块*/
+    display: inline-block;
+    padding-left:30px;
+    background: url("../images/beian_gov.png") no-repeat;
+}
+i.baidu{
+    /*引入背景图,行内块，宽度高度，左外边距*/
+    background: url("../images/21.gif") no-repeat;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    margin-left: 5px;
+}
+.bottom p:nth-child(3) a{
+    /*右外边距 */
+    margin-right: 5px;
+}
+.bottom p:nth-child(3) img{
+    /*统一高度宽度*/
+    width:92px;
+    height:33px;
+}
+.bottom p:nth-child(2){
+    /*上下外边距*/
+    margin: 20px 0 20px 0;
+}
+/*10,关于我们等页脚信息结束*/

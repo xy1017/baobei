@@ -1,0 +1,31 @@
+body{
+    width:1200px;
+    margin: 0 auto;
+}
+header{
+    width:100%;
+    height:auto;
+}
+header img{
+    width:1349px;
+    height:296px;
+    margin: -4px;
+}
+section{
+    position: relative;
+    z-index: 100;
+    width:1349px;
+    min-height:3227px;
+    background-color: #FE9900;
+    margin-left: -4px;
+}
+section>div{
+    position: absolute;
+    top:-100px;
+    left:160px;
+    margin:  auto;
+}
+section>div img{
+    padding: 0;
+    margin: -2px auto;
+}
